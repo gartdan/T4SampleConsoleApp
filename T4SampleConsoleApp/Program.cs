@@ -10,6 +10,8 @@ namespace T4SampleConsoleApp
     {
         static void Main(string[] args)
         {
+
+
         }
     }
 }
