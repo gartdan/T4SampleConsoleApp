@@ -1,0 +1,1 @@
+﻿"C:\Program Files (x86)\Common Files\microsoft shared\TextTemplating\10.0\TextTransform.exe" %1

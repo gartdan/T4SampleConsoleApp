@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Scripts\t4.bat" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Templates\TextTemplate1.tt">
@@ -64,6 +65,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- This is the important line: -->
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -71,4 +73,16 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <!--
+<PropertyGroup>  
+    <TransformOnBuild>true</TransformOnBuild>  
+</PropertyGroup>  
+<PropertyGroup>  
+    <OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>  
+</PropertyGroup>  
+
+<PropertyGroup>  
+    <TransformOutOfDateOnly>false</TransformOutOfDateOnly>  
+</PropertyGroup>  
+-->
 </Project>
